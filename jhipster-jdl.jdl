@@ -1,0 +1,9 @@
+
+entity Task {
+	@Id id Long
+    title String maxlength(100) required
+    description String
+    dueDate LocalDate
+    @defaultValue(true) completed Boolean 
+}
+
